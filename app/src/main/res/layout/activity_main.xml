@@ -45,6 +45,7 @@
         android:layout_height="match_parent"
         android:id="@+id/linearLayoutOriginal"
         android:orientation="vertical"
+        android:visibility="gone"
         >
 
         <LinearLayout
@@ -112,18 +113,58 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/linearLayoutPoker"
-        android:visibility="gone"
+        android:id="@+id/constraintLayoutPoker"
         >
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kocka1"
+            android:id="@+id/imageViewPokerGepKocka1"
+            app:layout_constraintEnd_toEndOf="parent"
             />
 
-    </LinearLayout>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kocka2"
+            android:id="@+id/imageViewPokerGepKocka2"
+
+            />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kocka1"
+            android:id="@+id/imageViewPokerKocka1"
+            app:layout_constraintTop_toTopOf="@+id/imageViewPokerGepKocka1"
+            />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kocka2"
+            android:id="@+id/imageViewPokerKocka2"
+            />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kocka1"
+            android:id="@+id/imageViewPokerButtonKocka1"
+            />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/kocka2"
+            android:id="@+id/imageViewPokerButtonKocka2"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
